@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="keywords" content="HTML, CSS">
+<meta name="description" content="..."
+<meta http-equiv="X-UA-Compatible" content="1e=edge" >
+
+   <title> delivery </title>
+   
+<link rel="stylesheet" href="TestA.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible"content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+</head>
+<body>
+
+<div class ="try">
+
+        <nav>
+        
+        
+        <img src="logoA.jpg" alt="">
+        
+
+        <ul class="sidebar">
+            <li onclick= hideSidebar()><a href="#"><span class="material-symbols-outlined">close</span></a></li>
+<li><a href="MaAir.html">Manage Booking </a></li>
+    <li><a href="index.html">Login</a></li>
+    <li><a href="TestAir.html">Book a flight</a></li>
+   <li><a href="CheckA.html">Check-in</a></li>
+        </ul>
+        
+        <ul>
+            <li class="hideOnMobile"><a href="#"><img src="logoA.jpg" alt=""></a></li>
+    <li class="hideOnMobile"><a href="MaAir.html">Manage Booking</a></li>
+   <li class="hideOnMobile"><a href="index.html">Login</a></li>
+            <li class="hideOnMobile"><a href="TestAir.html">Book a flight</a></li>    
+    <li class="hideOnMobile"><a href="CheckA.html">Check-in</a></li>         
+     <li class="menu-button" onclick = showSidebar()>  <span class ="material-symbols-outlined">density_medium</span> </li>
+        </ul>
+</nav>
+
+<script>
+function showSidebar(){
+        const sidebar = document. querySelector('.sidebar')
+sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+const sidebar = document. querySelector ('.sidebar')
+sidebar. style.display = 'none'
+}
+</script>
+
+
+  
+<div class="container">
+
+   <div class="maxm">
+          <div class="maxm-text" >     
+                    <h1>Book a Flights</h1>
+            </div>
+ </div>
+         
+               
+ <form onsubmit = "sendEmail(); reset(); return false;">
+           
+         <div class = "box-container"> 
+        
+        <div class="box">
+                  <div class="Way">
+                      <input class="Ow" type = "radio" id ="Trip" name="Root" value="One-way" required>One-Way
+
+    <input class="Rt" type="radio" id = "Trip" name="Root" value="Roundtrip" required> Roundtrip
+              
+     <input class="Rt" type="radio" id = "Trip" name="Root" value="Multi City" required> Multi City
+                  </div>
+                                  <div class = "fly">
+               
+            <h2>From      <ion-icon ios="airplane-outline" md="airplane-sharp"></ion-icon><h2>
+  <input   type="text" id = "from" placeholder ="Origin" required> 
+                   
+
+                      
+            <h2> To<ion-icon ios="airplane-outline" md="airplane-sharp"></ion-icon><h2>
+              <input type="text" id ="to" placeholder ="Destination" required>
+                     </div>
+                 
+                 
+                                 
+                        <div class="fly">
+      <h2>Departure<h2>
+        <div class = "departure">
+        <select class="DMY" id = "departureDay"> 
+       <option value="Day">Day</option> 
+        <option value="1">1</option> 
+        <option value="2">2</option> 
+        <option value="3" >3</option> 
+        <option value="4">4</option> 
+        <option value="5">5</option> 
+        <option value="6" >6</option> 
+        <option value="7">7</option> 
+        <option value="8">8</option> 
+        <option value="9">9</option> 
+        <option value="10">10</option> 
+          <option value="11">11</option> 
+        <option value="12">12</option> 
+        <option value="13" >13</option> 
+        <option value="14">14</option> 
+        <option value="15">15</option> 
+        <option value="16">16</option> 
+        <option value="17">17</option> 
+        <option value="18">18</option> 
+        <option value="19" >19</option> 
+        <option value="20">20</option> 
+      <option value="21">21</option> 
+        <option value="22">22</option> 
+        <option value="23" >23</option> 
+        <option value="24">24</option> 
+        <option value="25">25</option> 
+        <option value="26" >26</option> 
+        <option value="27">27</option> 
+        <option value="28">28</option> 
+        <option value="29" >29</option> 
+        <option value="30">30</option> 
+        </select> 
+          
+                 <select class="DMY" id = "departureMonth"> 
+       <option value ="Month">Month</option> 
+        <option value="January">January</option> 
+        <option value="February">February</option> 
+        <option value="March" >March</option> 
+        <option value="April">April </option> 
+        <option value="May">May</option> 
+        <option value="June" >June</option> 
+        <option value="July">July</option> 
+        <option value="August">August </option> 
+        <option value="September">September</option> 
+          <option value="October">October</option> 
+        <option value="November">Novembe</option> 
+        <option value="December" >December</option> 
+        </select> 
+                
+        <select class="DMY" id = "departureYear"> 
+       <option value="Year">Year</option> 
+        <option value="2024">2024</option> 
+        <option value="2025">2025</option> 
+        <option value="2026">2026</option> 
+        <option value="2027">2027</option> 
+        <option value="2028">2028</option> 
+        </select> 
+
+            <div class="Location">
+   <b><select class="dp" id ="Position"> 
+       <option value="Economy">Economy </option> 
+        <option value="Premium">Premium</option> 
+        <option value="Business">Business</option> 
+        <option value="First Class" >First Class</option>
+          </select>
+          </div>
+               </div>
+           </div>
+          </div>
+          
+          
+          <div class="box">
+                       
+                        <div class="fly">
+      <h2>Return Flight<h2>
+        <div class = "departure">
+        <select class="DMY" id = "ReturnFlightDay"> 
+       <option value="Day">Day</option> 
+        <option value="1">1</option> 
+        <option value="2">2</option> 
+        <option value="3" >3</option> 
+        <option value="4">4</option> 
+        <option value="5">5</option> 
+        <option value="6" >6</option> 
+        <option value="7">7</option> 
+        <option value="8">8</option> 
+        <option value="9">9</option> 
+        <option value="10">10</option> 
+          <option value="11">11</option> 
+        <option value="12">12</option> 
+        <option value="13" >13</option> 
+        <option value="14">14</option> 
+        <option value="15">15</option> 
+        <option value="16">16</option> 
+        <option value="17">17</option> 
+        <option value="18">18</option> 
+        <option value="19" >19</option> 
+        <option value="20">20</option> 
+      <option value="21">21</option> 
+        <option value="22">22</option> 
+        <option value="23" >23</option> 
+        <option value="24">24</option> 
+        <option value="25">25</option> 
+        <option value="26" >26</option> 
+        <option value="27">27</option> 
+        <option value="28">28</option> 
+        <option value="29" >29</option> 
+        <option value="30">30</option> 
+        </select> 
+          
+                    
+             <select class="DMY" id = "ReturnFlightMonth"> 
+       <option value ="Month">Month</option> 
+        <option value="January">January</option> 
+        <option value="February">February</option> 
+        <option value="March" >March</option> 
+        <option value="April">April </option> 
+        <option value="May">May</option> 
+        <option value="June" >June</option> 
+        <option value="July">July</option> 
+        <option value="August">August </option> 
+        <option value="September">September</option> 
+          <option value="October">October</option> 
+        <option value="November">Novembe</option> 
+        <option value="December" >December</option> 
+        </select> 
+                
+        <select class="DMY" id = "ReturnFlightYear"> 
+       <option value="Year">Year</option> 
+        <option value="2024">2024</option> 
+        <option value="2025">2025</option> 
+        <option value="2026">2026</option> 
+        <option value="2027">2027</option> 
+        <option value="2028">2028</option> 
+        </select> 
+        
+              
+            
+                 
+                 
+                 
+                                    <div class="Location">
+   <b><select class="dp" id ="ReturnPosition"> 
+       <option value="Economy">Economy </option> 
+        <option value="Premium">Premium</option> 
+        <option value="Business">Business</option> 
+        <option value="First Class" >First Class</option>
+          </select>
+          </div>
+               </div>
+           
+          
+          
+          
+          
+          <br>      <h2>Traveller <ion-icon name="person"></ion-icon><h2><br>  
+                   <div class="Group">
+                   
+   Adult (12+yrs)
+          
+          
+                  <select class="ACI" id = "Adult"> 
+       <option value="0">0</option> 
+        <option value="1">1</option> 
+        <option value="2">2</option> 
+        <option value="3" >3</option> 
+        <option value="4">4</option> 
+        <option value="5">5</option> 
+        <option value="6" >6</option> 
+        <option value="7">7</option> 
+        <option value="8">8</option> 
+        <option value="9">9</option> 
+        </select> 
+        
+        <br>Children (2-12yrs)
+        
+                          <select class="ACI" id = "Children"> 
+       <option value="0">0</option> 
+        <option value="1">1</option> 
+        <option value="2">2</option> 
+        <option value="3" >3</option> 
+        <option value="4">4</option> 
+        <option value="5">5</option> 
+        <option value="6" >6</option> 
+        <option value="7">7</option> 
+        <option value="8">8</option> 
+        <option value="9">9</option> 
+        </select> 
+        
+        <br>Infant (2yrs below)
+                          <select class="ACI" id = "infant"> 
+       <option value="0">0</option> 
+        <option value="1">1</option> 
+        <option value="2">2</option> 
+        <option value="3" >3</option> 
+        <option value="4">4</option> 
+        <option value="5">5</option> 
+        <option value="6" >6</option> 
+        <option value="7">7</option> 
+        <option value="8">8</option> 
+        <option value="9">9</option> 
+        </select> 
+        
+        </div>
+          
+          
+          </div>
+          
+          
+          
+          
+          
+          
+          
+    
+     
+     <div class = "fly">
+               <h2> E-mail<h2>
+     <input type="email" id = "email" placeholder="email"required><br>          
+         </div>
+         <div class = "fly">
+                   <h2>Phone Number<h2>
+                  <input type="number" id = "phone" placeholder="phone"required><br> 
+         </div>
+     
+
+    
+     <button class="mit" input type="send" value="send" placeholder="send">Search Flight<a href="#"></a></button>
+
+         </form>
+         
+ </div>
+
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function sendEmail(){
+    Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "janiebiet90@gmail.com",
+    Password: "E4CD63BA00FB139DD84C3A3315C5A6D22673",
+    To: "aniebietsolomon62@gmail.com",
+    From: document.getElementById("email").value,
+    Subject: "Book a flight",
+    Body: "Trip:" + document.getElementById("Trip").value
++ "<br> From:" + document.getElementById("from").value
++ "<br> To:" + document.getElementById("to").value 
++ "<br> Departure Day:" + document.getElementById("departureDay").value
++ "<br> Departure Month:" + document.getElementById("departureMonth").value 
++ "<br> Departure Year:" + document.getElementById("departureYear").value
++ "<br> Position:" + document.getElementById("Position").value
++ "<br> Return Flight Day:" + document.getElementById("ReturnFlightDay").value
++ "<br> Return Flight Month:" + document.getElementById("ReturnFlightMonth").value 
++ "<br> Return Flight Year:" + document.getElementById("ReturnFlightYear").value
++ "<br> Return Position:" + document.getElementById("ReturnPosition").value 
++ "<br> Adult:" + document.getElementById("Adult").value 
++ "<br> Children:" + document.getElementById("Children").value
+
++ "<br> Infant:" + document.getElementById("infant").value
++ "<br> Email:" + document.getElementById("email"). value
++ "<br> Phone no:" + document.getElementById("phone"). value
+}). then(
+message => alert ("Message Sent Succesfully")
+);
+
+}
+</script>
+
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+  </body> 
+</html> 
+      
+      
+ 
+            
+
